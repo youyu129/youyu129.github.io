@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.header {
+    width: 1024px;
+    height: 65px;
+    /* background-color: lightblue; */
+    border: 1px solid black;
+    border-bottom: 0;
+    margin: auto;
+    padding: 5px;
+}
+
+.container {
+    width: 1024px;
+    height: calc(768px - 65px - 20px);
+    /* background-color: lightgreen; */
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+}
+
+.aside {
+    width: 215px;
+    height: 100%;
+    /* background-color: lightcoral; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-header {
+    width: 100%;
+    height: calc(100% - 25px);
+    /* background-color: lightseagreen */
+    border: 1px solid black;
+    border-bottom: 0;
+    text-align: center;
+    padding: 2px;
+}
+
+.aside-title {
+    font-weight: 500;
+    font-size: 24px;
+    font-family: '標楷體';
+    color: #FF00FF;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    /* background-color: #0000FF; */
+    width: 200px;
+    height: 35px;
+    font-family: '標楷體';
+    color: #000000;
+    font-size: 16px;
+    font-family: '標楷體';
+    margin: auto;
+    margin-top: 10px;
+    background-image: url(../images/menu1.png);
+    /* background-repeat: no-repeat; */
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.menu-item:hover {
+    background-image: url(../images/menu2.png);
+}
+
+.aside-footer {
+    width: 100%;
+    height: 25px;
+    /* background-color: lightgoldenrodyellow; */
+    border: 1px solid black;
+    font-family: '標楷體';
+    color: #000000;
+    font-size: 16px;
+}
+
+.main {
+    width: calc(1024px - 215px);
+    height: calc(768px - 65px - 20px);
+    /* background-color: lightcyan; */
+    /* border: 1px solid black; */
+}
+
+.main-header {
+    width: 100%;
+    height: 29px;
+    /* background-color: lightgreen; */
+    border: 1px solid black;
+    border-bottom: 0;
+    border-left: 0;
+    font-family: '標楷體';
+    font-size: 24px;
+    color: #0000FF;
+}
+
+.main-footer {
+    width: 100%;
+    height: calc(100% - 29px);
+    /* background-color: lightcyan; */
+    border: 1px solid black;
+    border-left: 0;
+}
+
+.footer {
+    width: 1024px;
+    height: 20px;
+    /* background-color: lightpink; */
+    border: 1px solid black;
+    border-top: 0;
+    margin: auto;
+    font-family: '標楷體';
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    /* background-color: lightblue; */
+}
