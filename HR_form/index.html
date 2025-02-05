@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>HR System</title>
+    <style>
+        /* 背景色 */
+        body {
+            background-color: rgb(240, 240, 240);
+            margin: 0;
+        }
+
+        /* 複選框顏色 */
+        .form-check-input:checked {
+            background-color: #8a8989;
+            border-color: #8a8989;
+        }
+
+        /* 標題樣式 */
+        .title {
+            width: 100%;
+            height: 6vh;
+            text-align: center;
+            line-height: 6vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-75 mt-3 mb-3 bg-light rounded shadow-lg mx-auto p-3">
+
+        <div>
+            <h2 class="text-center bg-light title">HR System</h2>
+        </div>
+        <div class="container mt-3">
+
+            <form action="/action_page.php">
+
+                <!-- 員工編號 -->
+                <div class="mb-3 mt-3">
+                    <label for="myId" class="form-label">員工編號：</label>
+                    <input type="number" class="form-control" id="myId" placeholder="員工編號" name="myId">
+                </div>
+
+                <!-- 姓名 -->
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label">姓名：</label>
+                    <input type="text" class="form-control" id="name" placeholder="姓名" name="name">
+                </div>
+
+                <!-- 生日 -->
+                <div class="mb-3 mt-3">
+                    <label for="birthday" class="form-label">生日：</label>
+                    <input type="date" class="form-control" id="birthday" name="birthday">
+                </div>
+
+                <!-- 電話 -->
+                <div class="mb-3 mt-3">
+                    <label for="mobile" class="form-label">電話：</label>
+                    <input type="text" class="form-control" id="mobile" placeholder="電話" name="mobile">
+                </div>
+
+                <!-- 地址 -->
+                <div class="mb-3 mt-3">
+                    <label for="add" class="form-label">地址：</label>
+                    <input type="text" class="form-control" id="add" placeholder="地址" name="add">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email：</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@.com" name="email">
+                </div>
+
+                <!-- 照片 -->
+                <div class="mb-3 mt-3">
+                    <label for="photo" class="form-label">大頭照：</label>
+                    <input type="file" class="form-control" id="photo" name="photo">
+                </div>
+
+                <!-- 辦公地點 -->
+                <div class="mt-3">
+                    <label for="location" class="form-label">辦公地點：</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="location1" name="location1"
+                            value="location1" checked>
+                        <label class="form-check-label">總公司</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="location2" name="location2"
+                            value="location2">
+                        <label class="form-check-label">中區分公司</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="location3" name="location3"
+                            value="location3">
+                        <label class="form-check-label">南區分公司</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="location3" name="location3"
+                            value="location3">
+                        <label class="form-check-label">遠距辦公</label>
+                    </div>
+                </div>
+
+                <!-- 部門 -->
+                <div class="mb-3 mt-3">
+                    <label for="department" class="form-label">部門：</label>
+                    <select class="form-select" aria-label="department">
+                        <option value="hr">人力資源部</option>
+                        <option value="fin">財務管理部</option>
+                        <option value="rd">技術研發部</option>
+                        <option value="mkt">行銷推廣部</option>
+                        <option value="ops">營運管理部</option>
+                        <option value="sls">銷售業務部</option>
+                        <option value="it">資訊管理部</option>
+                    </select>
+                </div>
+
+                <!-- 職等 -->
+                <div class="mb-3 mt-3">
+                    <label for="photo" class="form-label">職等：</label>
+                    <input type="number" class="form-control" id="level" name="level" value="4" min="1" max="9">
+                </div>
+
+                <!-- 備註 -->
+                <div class="mt-3">
+                    <label for="note" class="form-label">備註：</label>
+                    <textarea class="form-control" id="note" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-secondary mt-5 mb-3 mx-auto d-grid gap-2 d-md-block">確認新增</button>
+                <!-- <button type="" class="btn btn-outline-secondary mt-5 mb-3 mx-auto d-grid gap-2 d-md-block"><a
+                        href="s20241021_05_hrform1.html"></a>另一版</button> -->
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
