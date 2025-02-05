@@ -4,27 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品集</title>
+    <title>我的網站</title>
     <style>
-        .item {
-            width: 200px;
-            height: 50px;
-            background-color: aliceblue;
-            margin: 5px auto;
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+        }
+
+        body {
+            background-color: rgb(253, 249, 246);
+            height: ;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        .navBox {
+            width: 100%;
+            height: 8vh;
+            background-color: rgb(42, 42, 94);
             text-align: center;
-            line-height: 50px;
+            line-height: 8vh;
+            color: white;
+        }
+
+        .box {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            /* background-color: red; */
+        }
+
+        .btn a {
+            width: 40%;
+            margin: auto;
+            background-color: transparent;
+            border: 1px solid #B98B67;
+            color: #B98B67;
+            line-height: 60px;
+            border-radius: 30px;
+            display: block;
+            text-align: center;
+            color: #B98B67;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.4s ease;
+            box-shadow: 2px 2px 2px rgba(128, 96, 71, 0.5);
+        }
+
+        .btn a:hover {
+            background-color: #B98B67;
+            color: white;
+        }
+
+        main {
+            min-height: 100%;
+            margin-bottom: -10vh;
+        }
+
+
+        footer {
+            width: 100%;
+            height: 8vh;
+            background-color: rgb(42, 42, 94);
+            text-align: center;
+            line-height: 10vh;
+            color: white;
+            position: fixed;
+            bottom: 0px;
+            margin-top: 30px;
         }
     </style>
+
 </head>
 
 <body>
-    <div class="item"><a href="./schooltimetable/">課表</a></div>
-    <div class="item"><a href="./song/">歌曲網頁</a></div>
-    <div class="item"><a href="./hr">HR系統</a></div>
-    <div class="item"><a href="./flexbox/">Flexbox</a></div>
-    <div class="item"><a href="./web_page_design_C/">網頁設計丙級</a></div>
+    <div class="navBox">
+        <h1>作品集</h1>
+    </div>
+    <main>
+        <div class="box btn">
+            <div>
+                <a href="./calendar" target="_blank">
+                    <h3>萬年曆</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./song" target="_blank">
+                    <h3>Song</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./myHotel" target="_blank">
+                    <h3>My Hotel</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./Robot" target="_blank">
+                    <h3>Robot</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./HR_form" target="_blank">
+                    <h3>HR表單</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./CrystalBracelet_Shop" target="_blank">
+                    <h3>Crystal Bracelet Shop</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./RWD_WoodenFloor" target="_blank">
+                    <h3>WoodenFloor</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./basketballgame" target="_blank">
+                    <h3>投籃小遊戲</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./Anyi-Long-Term-Care" target="_blank">
+                    <h3>安怡長期照顧中心</h3>
+                </a>
+            </div>
+            <div>
+                <a href="./WebBackend_System" target="_blank">
+                    <h3>前後台網站</h3>
+                </a>
+            </div>
+        </div>
+    </main>
 
 
+
+    <footer>
+        <p>copyright @ 2025 youyu</p>
+    </footer>
 </body>
 
 </html>
